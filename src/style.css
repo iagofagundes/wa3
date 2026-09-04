@@ -60,8 +60,12 @@ h1 em, h2 em {
   font-style: italic;
 }
 
+.section-intro .eyebrow,
+.about .eyebrow,
 .section-intro h2 em,
-.about h2 em {
+.about h2 em,
+.big-number,
+.card-number {
   color: var(--ink);
 }
 
@@ -370,7 +374,7 @@ h1 em, h2 em {
 }
 
 .big-number {
-  color: var(--orange);
+  color: var(--ink);
   display: block;
   font: italic 72px/1 Georgia, serif;
 }
@@ -403,7 +407,7 @@ h1 em, h2 em {
 }
 
 .card-number {
-  color: var(--orange);
+  color: var(--ink);
   font-size: 11px;
   letter-spacing: 0.1em;
 }
