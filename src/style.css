@@ -264,7 +264,9 @@ h1 em, h2 em {
 }
 
 .visual-image {
-  background: linear-gradient(90deg, #050505 0%, transparent 27%, transparent 74%, #050505 100%), url('/imgs/0FB4D226-A1D7-4D79-8288-B60C04EC225B.JPG') center/cover;
+  background-image: linear-gradient(110deg, transparent 0 13%, rgba(255, 84, 47, 0.28) 34%, transparent 58%), url('/imgs/0FB4D226-A1D7-4D79-8288-B60C04EC225B.JPG');
+  background-position: center;
+  background-size: cover;
   background-blend-mode: multiply;
 }
 
