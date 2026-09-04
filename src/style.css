@@ -60,6 +60,11 @@ h1 em, h2 em {
   font-style: italic;
 }
 
+.section-intro h2 em,
+.about h2 em {
+  color: var(--ink);
+}
+
 /* ====================================
    HEADER E NAVEGAÇÃO
    ==================================== */
@@ -263,8 +268,17 @@ h1 em, h2 em {
   width: min(41vw, 560px);
 }
 
-.visual-image, .about-image {
-  background: linear-gradient(110deg, transparent 0 13%, rgba(255, 84, 47, 0.28) 34%, transparent 58%), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1100&q=85') center/cover;
+.visual-image {
+  background: linear-gradient(110deg, transparent 0 13%, rgba(255, 84, 47, 0.28) 34%, transparent 58%), url('/imgs/0FB4D226-A1D7-4D79-8288-B60C04EC225B.JPG') center/cover no-repeat;
+  background-blend-mode: screen, normal;
+  filter: saturate(0.85);
+  height: 500px;
+  mix-blend-mode: normal;
+  position: relative;
+}
+
+.about-image {
+  background: linear-gradient(90deg, transparent, rgba(255, 240, 0, 0.12)), url('/imgs/c9f86288-5b04-4018-b96b-ca55e7d70d4d.JPG') center/cover;
   background-blend-mode: multiply;
   filter: saturate(0.7);
   height: 500px;
