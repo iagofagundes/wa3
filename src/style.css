@@ -739,7 +739,9 @@ footer strong {
   .hero {
     min-height: auto;
     padding: 100px 7vw 30px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
   }
 
   .hero-glow {
@@ -750,7 +752,26 @@ footer strong {
     opacity: 0.72;
   }
 
+  .hero-visual {
+    order: 1;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(100%, 360px);
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  .visual-image {
+    height: 300px;
+  }
+
+  .visual-label {
+    display: none;
+  }
+
   .hero-copy {
+    order: 2;
     max-width: 100%;
     width: 100%;
   }
@@ -793,29 +814,13 @@ footer strong {
     padding-bottom: 8px;
   }
 
-  .hero-visual {
-    position: relative;
-    right: auto;
-    bottom: auto;
-    width: calc(100% + 1vw);
-    height: 300px;
-    margin: 16px -1vw 0;
-  }
-
-  .visual-image {
-    height: 300px;
-  }
-
-  .visual-label {
-    display: none;
-  }
-
   .hero-note {
+    order: 3;
     position: relative;
     width: 100%;
     left: auto;
     bottom: auto;
-    margin-top: 14px;
+    margin-top: 0;
     font-size: 9px;
   }
 
