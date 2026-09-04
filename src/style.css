@@ -266,17 +266,17 @@ h1 em, h2 em {
 
 .hero-visual {
   bottom: 55px;
-  height: 520px;
+  height: 360px;
   position: absolute;
   right: 7vw;
-  width: min(41vw, 560px);
+  width: 360px;
 }
 
 .visual-image {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.02)), url('/imgs/0FB4D226-A1D7-4D79-8288-B60C04EC225B.JPG') center 42% / cover no-repeat;
   background-color: #d9d4c8;
   filter: saturate(0.8) contrast(1.08) brightness(0.95);
-  height: 500px;
+  height: 360px;
   mix-blend-mode: normal;
   position: relative;
   overflow: hidden;
