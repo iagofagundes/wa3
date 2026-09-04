@@ -738,34 +738,39 @@ footer strong {
   /* Hero */
   .hero {
     min-height: auto;
-    padding: 120px 7vw 42px;
-    display: flex;
-    flex-direction: column;
-    gap: 26px;
+    padding: 100px 7vw 30px;
+    display: block;
   }
 
   .hero-glow {
-    left: 18%;
-    width: 260px;
-    height: 300px;
+    left: 14%;
     top: -50px;
+    width: 290px;
+    height: 340px;
     opacity: 0.72;
   }
 
   .hero-copy {
-    max-width: none;
+    max-width: 100%;
     width: 100%;
   }
 
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    margin-bottom: 18px;
+  }
+
   h1 {
-    font-size: clamp(52px, 15vw, 84px);
-    line-height: 0.88;
-    margin-bottom: 16px;
+    font-size: clamp(54px, 15vw, 86px);
+    line-height: 0.9;
+    margin-bottom: 18px;
   }
 
   .hero-text {
-    max-width: none;
-    font-size: 14px;
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.45;
   }
 
   .hero-actions {
@@ -773,25 +778,28 @@ footer strong {
     align-items: stretch;
     flex-direction: column;
     gap: 18px;
-    margin-top: 26px;
+    margin-top: 22px;
   }
 
   .button {
     width: 100%;
     justify-content: center;
+    padding: 18px 18px;
+    font-size: 11px;
   }
 
   .text-link {
     width: max-content;
+    padding-bottom: 8px;
   }
 
   .hero-visual {
     position: relative;
     right: auto;
     bottom: auto;
-    width: min(100%, 360px);
+    width: calc(100% + 1vw);
     height: 300px;
-    margin: 0 auto;
+    margin: 16px -1vw 0;
   }
 
   .visual-image {
@@ -807,7 +815,8 @@ footer strong {
     width: 100%;
     left: auto;
     bottom: auto;
-    margin-top: 8px;
+    margin-top: 14px;
+    font-size: 9px;
   }
 
   .scroll-cue {
