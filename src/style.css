@@ -737,16 +737,22 @@ footer strong {
 
   /* Hero */
   .hero {
-    min-height: 780px;
-    padding: 145px 7vw 80px;
+    min-height: auto;
+    padding: 145px 7vw 50px;
+  }
+
+  .hero-copy {
+    max-width: none;
   }
 
   .hero-visual {
-    bottom: 80px;
+    bottom: auto;
     height: 300px;
-    right: 50%;
-    transform: translateX(50%);
-    width: min(72vw, 360px);
+    margin: 12px auto 0;
+    position: relative;
+    right: auto;
+    transform: none;
+    width: min(100%, 360px);
   }
 
   .visual-image {
@@ -758,8 +764,11 @@ footer strong {
   }
 
   .hero-note {
-    bottom: 31px;
-    left: 7vw;
+    bottom: auto;
+    left: auto;
+    margin-top: 18px;
+    position: relative;
+    width: 100%;
   }
 
   .scroll-cue {
@@ -770,6 +779,11 @@ footer strong {
     align-items: flex-start;
     flex-direction: column;
     gap: 22px;
+  }
+
+  .button {
+    width: 100%;
+    justify-content: center;
   }
 
   /* Sections */
