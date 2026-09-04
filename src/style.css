@@ -273,12 +273,13 @@ h1 em, h2 em {
 }
 
 .visual-image {
-  background: linear-gradient(110deg, transparent 0 13%, rgba(255, 84, 47, 0.28) 34%, transparent 58%), url('/imgs/0FB4D226-A1D7-4D79-8288-B60C04EC225B.JPG') center/cover no-repeat;
-  background-blend-mode: screen, normal;
-  filter: saturate(0.85);
+  background: url('/imgs/0FB4D226-A1D7-4D79-8288-B60C04EC225B.JPG') center center / cover no-repeat;
+  background-color: #d9d4c8;
+  filter: saturate(0.9) contrast(1.08);
   height: 500px;
   mix-blend-mode: normal;
   position: relative;
+  overflow: hidden;
 }
 
 .about-image {
