@@ -4,7 +4,7 @@
 
 :root {
   --ink: #050505;
-  --paper: #e8e4d9;
+  --paper: #f4f1e6;
   --orange: #fff000;
   --muted: #73736b;
   --line: rgba(5, 5, 5, 0.2);
@@ -56,7 +56,7 @@ h1 {
 }
 
 h1 em, h2 em {
-  color: var(--ink);
+  color: var(--orange);
   font-style: italic;
 }
 
@@ -99,7 +99,7 @@ h1 em, h2 em {
   border: 2px solid #050505;
   border-radius: 50%;
   box-shadow: 0 0 0 2px #fff000;
-  color: #ffffff;
+  color: #050505;
   display: grid;
   font-family: Georgia, serif;
   font-size: 14px;
@@ -160,7 +160,7 @@ h1 em, h2 em {
    ==================================== */
 
 .hero {
-  background: #050505;
+  background: var(--ink);
   color: var(--paper);
   min-height: 760px;
   overflow: hidden;
@@ -186,7 +186,7 @@ h1 em, h2 em {
 }
 
 .eyebrow {
-  color: #050505;
+  color: var(--orange);
   font-size: 11px;
   letter-spacing: 0.17em;
   margin: 0 0 28px;
@@ -225,13 +225,13 @@ h1 em, h2 em {
 }
 
 .button-primary {
-  background: #fff000;
-  color: #050505;
+  background: var(--orange);
+  color: #fff;
   transition: transform 0.25s, background 0.25s;
 }
 
 .button-primary:hover {
-  background: #fff85c;
+  background: #ff704f;
   transform: translateY(-3px);
 }
 
@@ -263,11 +263,13 @@ h1 em, h2 em {
   width: min(41vw, 560px);
 }
 
-.visual-image {
-  background-image: linear-gradient(110deg, transparent 0 13%, rgba(255, 84, 47, 0.28) 34%, transparent 58%), url('/imgs/0FB4D226-A1D7-4D79-8288-B60C04EC225B.JPG');
-  background-position: center;
-  background-size: cover;
+.visual-image, .about-image {
+  background: linear-gradient(110deg, transparent 0 13%, rgba(255, 84, 47, 0.28) 34%, transparent 58%), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=1100&q=85') center/cover;
   background-blend-mode: multiply;
+  filter: saturate(0.7);
+  height: 500px;
+  mix-blend-mode: normal;
+  position: relative;
 }
 
 .visual-label {
@@ -293,7 +295,7 @@ h1 em, h2 em {
 }
 
 .visual-caption strong {
-  color: #ffffff;
+  color: var(--orange);
   font-weight: 400;
 }
 
@@ -387,7 +389,7 @@ h1 em, h2 em {
 }
 
 .card-number {
-  color: #050505;
+  color: var(--orange);
   font-size: 11px;
   letter-spacing: 0.1em;
 }
@@ -452,7 +454,7 @@ h1 em, h2 em {
 .about-stamp {
   border: 1px solid var(--orange);
   border-radius: 50%;
-  color: #c4ba00;
+  color: var(--orange);
   font: italic 18px/1 Georgia, serif;
   padding: 24px 14px;
   position: absolute;
@@ -491,12 +493,8 @@ h1 em, h2 em {
   max-width: none;
 }
 
-.events .eyebrow {
-  color: #ffffff;
-}
-
-.events .big-number {
-  color: var(--orange);
+.events .eyebrow, .events .big-number {
+  color: #fff000;
 }
 
 .events .section-side p {
@@ -533,7 +531,7 @@ h1 em, h2 em {
 }
 
 .video-info span {
-  color: #ffffff;
+  color: #fff000;
   font-size: 10px;
 }
 
@@ -547,7 +545,7 @@ h1 em, h2 em {
    ==================================== */
 
 .contact {
-  background: #050505;
+  background: var(--ink);
   color: var(--paper);
   max-width: none;
   padding-left: 12vw;
@@ -656,10 +654,10 @@ footer strong {
 }
 
 .floating-whatsapp {
-  background: #fff000;
+  background: var(--orange);
   border-radius: 50%;
   bottom: 25px;
-  color: #050505;
+  color: white;
   display: grid;
   font-size: 24px;
   height: 56px;
